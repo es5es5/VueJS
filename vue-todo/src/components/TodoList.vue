@@ -16,8 +16,8 @@
 export default {
   props: ['propsdata'],
   methods: {
-    removeTodo() {
-      console.log('clicked');
+    removeTodo(todoItem, index) {
+      this.$emit('removeTodo', todoItem, index);
     }
   }
 }
